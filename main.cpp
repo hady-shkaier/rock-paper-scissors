@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <string>
 using namespace std;
 
 enum enOptions
@@ -207,3 +208,4 @@ int main()
     startSystem();
     return 0;
 }
+// Created By HaDy
