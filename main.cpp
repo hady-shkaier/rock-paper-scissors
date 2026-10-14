@@ -167,9 +167,11 @@ void playRounds(short countOfRounds)
     }
 
     gameResult.Rounds = countOfRounds;
-    gameResult.FinalWinner = getWinner(finalWinnerOfGame(gameResult));
+    enWinner finalWinner = finalWinnerOfGame(gameResult);
+    gameResult.FinalWinner = getWinner(finalWinner);
 
     printGameResult(gameResult);
+    setScreenColor(finalWinner);
 }
 
 bool playAgain(string message)
